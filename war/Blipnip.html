@@ -1,0 +1,102 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the         -->
+<!-- browser's rendering engine into                              -->
+<!-- "Standards Mode". Replacing this declaration        -->
+<!-- with a "Quirks Mode" doctype is not supported.    -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- 
+     constraint viewport to device width, 
+     set initial zoom level to 100%,
+     disable user zoom
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<link type="text/css" rel="stylesheet" href="BlipnipApp.css">
+<!-- <link type="text/css" rel="stylesheet" href="style_mobile.css">
+<style>
+            html, body {
+                margin  : 0;
+                padding : 0;
+                height  : 100%;
+                width   : 100%;
+            }
+            @media only screen and (max-width: 600px) {
+                html, body {
+                    height  : 117%;
+                }
+            }
+            #mainContainer {
+                width    : 100%;
+                position : relative;
+                height   : 100%;
+            }
+            .olControlAttribution {
+                position      : absolute;
+                font-size     : 8px;
+                bottom        : -85 !important;
+                right         : 0 !important;
+                background    : rgba(0,0,0,0.1);
+                font-family   : Arial;
+                padding       : 2px 4px;
+                border-radius : 5px 0 0 0;
+            }
+            #title, #tags, #shortdesc {
+                display: none;
+            }
+        </style> -->
+<!-- <link type="text/css" rel="stylesheet" href="mobile-wmts-vienna.css">    --> 
+        
+<!--                                           -->
+<!-- Any title is fine                   -->
+<!--                                           -->
+<title>Blipnip App Alpha v1.1</title>
+
+<!-- Adding the openlayers.js -->
+<script type="text/javascript" language="javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+<!-- Adding the mobile version also see http://gis.stackexchange.com/questions/82694/tap-on-points-on-touch-screen-with-openlayers-->
+<script type="text/javascript" language="javascript" src="http://www.openlayers.orgOpenLayers.mobile.js"></script>
+
+
+<script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
+
+<!-- To work offline it is necessary to place OpenLayers 2.13 in thirdparty folder.                      										   -->
+<!-- So if the project has the following structure: war>blipnip_app>js>gwt-openlayers> do:                                                 -->
+<!-- <script type="text/javascript" language="javascript" src="blipnip_app/js/gwt-openlayers/OpenLayers.js"></script>   -->
+
+<!-- Otherwise use it directly from openlayers                                               -->
+<!-- <script src="http://www.openlayers.org/api/OpenLayers.js"></script>  -->
+<!-- <script src="animatedcluster/AnimatedCluster.js"></script>                  -->
+
+<!--                                                                      -->
+<!-- This script loads your compiled module.     -->
+<!-- If you add any GWT meta tags, they must -->
+<!-- be added before this line.                             -->
+<!--                                                                      -->
+<script type="text/javascript" language="javascript" src="blipnip_app/blipnip_app.nocache.js"></script>
+</head>
+
+<!--                                                                      -->
+<!-- The body can have arbitrary html, or          -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.             -->
+<!--                                                                      -->
+<body>
+
+	<!-- OPTIONAL: include this if you want history support -->
+ 	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position: absolute; width: 0; height: 0; border: 0"></iframe> 
+
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this application to display correctly.
+		</div>
+	</noscript>
+	<div class="login-banner" align="right" id="loginPanelContainer"></div> 
+	<div align="center" id="mainContainer"></div> 
+</body>
+</html>

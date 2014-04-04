@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Uploading cron jobs
+
+You can use AppCfg to upload cron jobs. When you upload your application to App Engine using AppCfg update, 
+the Cron Service is updated with the contents of cron.xml. You can update just the cron configuration without 
+uploading the rest of the application using AppCfg update_cron.
+
+To delete all cron jobs, change the cron.xml file to just contain:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries/>
+
+Cron support in the Admin Console
+
+The Admin Console allows you to view the state of your cron jobs. Select the "Cron Jobs" link from 
+the side menu to view the state of the jobs, including the last time the job was run and the result of the job.
+
+You can also see when cron jobs are added or removed by selecting the "Admin Logs" page from the Admin Console menu.
+
+Cron support in the development server
+
+The development server doesn't automatically run your cron jobs. You can use your local desktop's cron or 
+scheduled tasks interface to trigger the URLs of your jobs with curl or a similar tool.
+
+ -->
+ 
+<cronentries>
+
+  <cron>
+    <url>/cronexample</url>
+    <description>Maintenance work for Blipnip</description>
+    <schedule>every 2 hours synchronized</schedule>
+
+<!-- 
+	Here's an example using timezone 
+    <schedule>every day 01:00</schedule>
+    <timezone>America/New_York</timezone>
+    https://developers.google.com/appengine/docs/java/config/cron#Java_appengine_web_xml_The_schedule_format
+  -->
+  
+  </cron>
+  
+</cronentries>

@@ -1,0 +1,225 @@
+/** Add css rules here for your application. */
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+  z-index:2;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+	font-size: 14px;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}
+
+.blipnip-gwt-Menu {
+background-color:rgb(240,240,240);
+opacity:1;
+} 
+
+/**************************/
+/* Eureka utils styles */
+/**************************/
+
+/***********************/
+/* TimeBox Styles */
+/***********************/
+.timePickerReadOnly,.timePickerReadOnlySmall {
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	background-color: #F2F2F2;
+	padding: 6px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(top, #E0E0E0, #E6E6E6, #8F8F8F);
+	background-image: -moz-linear-gradient(top, #E0E0E0, #E6E6E6, #8F8F8F);
+	background-image: -ms-linear-gradient(top, #E0E0E0, #E6E6E6, #8F8F8F);
+	background-image: -o-linear-gradient(top, #E0E0E0, #E6E6E6, #8F8F8F);
+	background-image: linear-gradient(top, #E0E0E0, #E6E6E6, #8F8F8F);
+	border: 1px solid #535353;
+	-webkit-box-shadow: 0px 1px 0px 0px black;
+	-moz-box-shadow: 0px 1px 0px 0px black;
+	box-shadow: 0px 1px 0px 0px black;
+}
+
+.timePickerReadOnly {
+	font-size: 18px;
+}
+
+.timePickerReadOnlySmall {
+	font-size: 12px;
+}
+
+.timePicker {
+	display: inline-block;
+	padding: 2px 5px 0px;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 3px 4px -2px #333333 inset;
+	-webkit-box-shadow: 0 3px 4px -2px #333333 inset;
+	box-shadow: 0 3px 4px -2px #333333 inset;
+	border: 1px solid #222222;
+	background-color: white;
+}
+
+.timePickerEntry,.timePickerEntrySmall {
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+}
+
+.timePickerEntry {
+	font-size: 18px;
+}
+
+.timePickerEntrySmall {
+	font-size: 12px;
+}
+
+/********************/
+/* iOSButton Styles */
+/********************/
+.iOSButton-badge {
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	background: #ff3333;
+	border: 2px solid white;
+	padding: 0px 5px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iOSButton {
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	background: #00b5e2;
+}
+.blipnip-gwt-view-blip-details {
+	background-color: rgb(127,127,127);
+}
+.blipnip-gwt-view-blip-details-text {
+	color: White;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: dimgray;
+}
+.blipnip-gwt-view-blip-details-text-title {
+	color: White;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: Gray;
+}
+.blipnip-gwt-Menu-Bar {
+z-index:1;
+opacity:0.9;
+background-color: #B9B9B9;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+}
+.blipnip-gwt-Menu-Map {
+height: 100%;
+width: 100%;
+margin  : 0;
+padding : 0;
+opacity:1;
+z-index:1;
+filter: alpha(opacity=50);
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+-ms-touch-action: none;
+ -webkit-transition: opacity 0.2s ease-in-out;
+ -moz-transition: opacity 0.2s ease-in-out;
+ -o-transition: opacity 0.2s ease-in-out;
+ transition: opacity 0.2s ease-in-out;
+ -webkit-transform: translateZ(360deg);
+ -moz-transform: translateZ(360deg);
+ -o-transform: translateZ(360deg);
+ -ms-transform: translateZ(360deg);
+ transform: translateZ(360deg);
+ -webkit-backface-visibility: hidden;
+ -moz-backface-visibility: hidden;
+ -ms-backface-visibility: hidden;
+ backface-visibility: hidden;
+ -webkit-perspective: 1000;
+ -moz-perspective: 1000;
+ -ms-perspective: 1000;
+ perspective: 1000;
+}
+.blipnip-gwt-label {
+	 ext-shadow:
+    -1px -1px 0 #FFFFFF,
+    1px -1px 0 #FFFFFF,
+    -1px 1px 0 #FFFFFF,
+    1px 1px 0 #FFFFFF; 
+	color: black;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 0px;
+	word-spacing: 0px; 
+}
+.blipnip-gwt-label-attribution {
+	color: black;
+	font-size: 8px;
+	font-weight: normal;
+}
+.blipnip-gwt-Menu-Bar-Attribution {
+z-index:1;
+opacity:0.9;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+}
+.blipnip-gwt-Menu-Bar-alt {
+z-index:1;
+opacity:0.8;
+background-color: #EEE8AA;/* EEE8AA gold, F9EBBF gold 2, EB383E red, 68BEFF, B9B9B9 bluish: 6982A6 or 6D728B FFFFFF?*/
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+}
+.blipnip-gwt-Menu-Map-Back {
+padding: 0 0px;
+opacity:1;
+z-index:-1;
+}
