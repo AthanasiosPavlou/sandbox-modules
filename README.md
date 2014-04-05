@@ -47,3 +47,5 @@ Clean the project.
 All the jars should now be added and imports should be ok.
 
 (for more details check: https://developers.google.com/eclipse/docs/existingprojects)
+
+//new change
