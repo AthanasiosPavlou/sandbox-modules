@@ -1,9 +1,15 @@
 *.class
 *.classpath
+
 *.DS_Store
+
 .gwt/
+
 .project
+
 .settings/
+
+
 # Package Files #
 #*.jar
 *.war
