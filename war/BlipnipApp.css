@@ -214,7 +214,7 @@ opacity:0.9;
 .blipnip-gwt-Menu-Bar-alt {
 z-index:1;
 opacity:0.8;
-background-color: #EEE8AA;/* EEE8AA gold, F9EBBF gold 2, EB383E red, 68BEFF, B9B9B9 bluish: 6982A6 or 6D728B FFFFFF?*/
+background-color: #B9B9B9;/* EEE8AA gold, F9EBBF gold 2, EB383E red, 68BEFF, B9B9B9 bluish: 6982A6 or 6D728B FFFFFF?*/
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 -webkit-tap-highlight-color: transparent;
 }
@@ -222,4 +222,12 @@ background-color: #EEE8AA;/* EEE8AA gold, F9EBBF gold 2, EB383E red, 68BEFF, B9B
 padding: 0 0px;
 opacity:1;
 z-index:-1;
+}
+.blipnip-gwt-Menu-Map-simple {
+height: 100%;
+width: 100%;
+margin  : 0;
+padding : 0;
+opacity:1;
+z-index:1;
 }
