@@ -151,9 +151,14 @@ public class LoginPresenter implements Presenter
 		
 		display.setUserInfoData(info);
 		
+		/**
+		 * Enabling the guest button, because login in facebook/google
+		 * via the Oauth library used is not working when used in tablets/mobile devices.
+		 */
 		if (GWT.isProdMode())
 		{
-			display.setVisibleGuestLoginButton(false);
+			//change
+			display.setVisibleGuestLoginButton(true);
 		}
 		else
 		{
