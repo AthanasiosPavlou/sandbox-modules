@@ -28,6 +28,7 @@ Right click on the project > Google > Web Toolkit Settings
 Check the Use Google Web Toolkit (make sure that you are using SDK: GWT-2.5.1)
 
 Similarly go to Google App Engine and check "Use Google App Engine" (make sure you use 1.8.4)
+Note: If 1.8.4 is not used then errors will pop up only resolvable if you change to 1.8.4 or update the project accordingly.
 
 The project will show many errors now, due to not having included the required jars.
 
